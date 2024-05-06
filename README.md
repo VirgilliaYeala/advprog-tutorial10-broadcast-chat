@@ -15,3 +15,8 @@ Setelah server dijalankan dan ketika setiap klien (sebanyak 3 klien) terhubung, 
 Setelah mencoba mengubah port menjadi 8080, saya menemukan bahwa terdapat kesalahan pada sisi klien karena pengaturan port yang tidak sesuai. Pada sisi klien, port seharusnya juga diubah menjadi 8080 agar sesuai dengan yang digunakan oleh server. Setelah saya mengubah port menjadi 8080 di sisi klien, program berjalan tanpa kesalahan dan berjalan dengan lancar.
 
 Hal ini terjadi karena server dan klien perlu berkomunikasi melalui port yang sama agar dapat terhubung dengan benar. Dalam hal ini, menggunakan port yang sama (8080) untuk server dan klien memastikan bahwa keduanya dapat berkomunikasi dengan lancar.
+
+![Image 1](assets/images/image-client-server-run.png)
+Hasil pada gambar di atas dicapai dengan mengubah kode dalam <code>bin/server.rs</code> dan <code>bin/client.rs</code> menjadi sebagai berikut : 
+
+![Image 1](assets/images/image-client-server.png)
